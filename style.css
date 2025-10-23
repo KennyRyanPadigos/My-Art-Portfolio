@@ -1,0 +1,138 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #1C1C1C, #C79F43, #D94E41);
+  color: #FFFFFF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: rgba(44, 44, 44, 0.85);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.25rem;
+  color: #CCB974;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #FFF;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section Styling */
+.contact {
+  padding: 3rem 1rem;
+  background-color: rgba(44, 44, 44, 0.85);
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact label {
+  font-size: 1.2rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #E34234;
+  color: white;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #D94E41;
+}
+
+/* Buy Section Styling */
+.buy {
+  padding: 3rem 1rem;
+  background-color: rgba(44, 44, 44, 0.85);
+  text-align: center;
+}
+
+.buy h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.buy p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.buy .buy-link {
+  display: inline-block;
+  background-color: #E34234;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.buy .buy-link:hover {
+  background-color: #D94E41;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(44, 44, 44, 0.85);
+  font-size: 0.9rem;
+}
